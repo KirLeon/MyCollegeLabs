@@ -1,4 +1,4 @@
-package Laba4_23;
+package Dararya.Laba5;
 
 public class Teacher {
     public Teacher(){

@@ -1,4 +1,4 @@
-package Laba4_23;
+package Dararya.Laba3;
 
 import java.io.BufferedReader;
 import java.io.IOException;
