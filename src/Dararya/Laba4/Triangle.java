@@ -1,5 +1,5 @@
 package Dararya.Laba4;
-
+//hallo
 public class Triangle {
     Triangle(double a, double b, double angleC){
         if(angleC>0 & angleC<180){
