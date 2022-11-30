@@ -1,4 +1,7 @@
-package Dararya.Laba8n2;
+package Dararya.Laba8n2.application;
+
+import Dararya.Laba8n2.entity.MathTeacher;
+import Dararya.Laba8n2.entity.Teacher;
 
 public class Test {
     public static void main(String[] args) {

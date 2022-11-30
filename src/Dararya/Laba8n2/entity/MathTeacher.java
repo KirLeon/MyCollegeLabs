@@ -1,4 +1,4 @@
-package Dararya.Laba8n2;
+package Dararya.Laba8n2.entity;
 
 public class MathTeacher extends Teacher {
     protected String uchenaya_stepen;

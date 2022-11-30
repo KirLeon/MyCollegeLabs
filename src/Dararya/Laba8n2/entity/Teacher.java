@@ -1,4 +1,6 @@
-package Dararya.Laba8n2;
+package Dararya.Laba8n2.entity;
+
+import Dararya.Laba8n2.abstraction.TeachAble;
 
 public class Teacher implements TeachAble {
     protected int experience;
@@ -9,7 +11,7 @@ public class Teacher implements TeachAble {
         experience = exp;
         System.out.println("Teacher is created");
     }
-    protected void display(){
+    public void display(){
         System.out.println("This is a teacher");
     }
 
