@@ -1,6 +1,8 @@
-package Mohistro.Laba8n2;
+package Mohistro.Laba8n2.entity;
 
-public class SpaceStation implements SpaceObject{
+import Mohistro.Laba8n2.abstraction.SpaceObject;
+
+public class SpaceStation implements SpaceObject {
     protected String name;
 
     public SpaceStation(String name) {

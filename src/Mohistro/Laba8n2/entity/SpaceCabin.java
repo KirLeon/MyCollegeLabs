@@ -1,4 +1,6 @@
-package Mohistro.Laba8n2;
+package Mohistro.Laba8n2.entity;
+
+import Mohistro.Laba8n2.abstraction.SpaceModule;
 
 public class SpaceCabin extends SpaceModule {
     protected double temperature;
