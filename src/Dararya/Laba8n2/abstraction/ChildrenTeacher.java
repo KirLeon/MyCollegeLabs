@@ -8,7 +8,7 @@ public abstract class ChildrenTeacher extends Teacher {
         experience = exp;
         System.out.println("Children Teacher is created");
     }
-    protected void display(){
+    public void display(){
         System.out.println("This is the children teacher");
     }
 }
