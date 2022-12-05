@@ -1,4 +1,4 @@
-package Alex.Laba10;
+package Mohistro.Laba10;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,44 +6,35 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Message {
-
     public Message() {
         System.out.println("Введите сообщение для шифровки, используя русские буквы. Текст не должен содержать цифр");
         this.message = read_message();
-        System.out.println("Введите ключевое слово, используя русские буквы. Текст не должен содержать цифр");
-        this.code_word = read_message();
-        System.out.println("Введите ключ для шифровки в диапазоне от 1 до 31");
-        this.key = readKey();
-    }
-    public Message(int a){
-        System.out.println("Введите зашифрованное слово, используя русские буквы. Текст не должен содержать цифр");
-        this.coded_message = read_message();
-        System.out.println("Введите ключевое слово, используя русские буквы. Текст не должен содержать цифр");
-        this.code_word = read_message();
-        System.out.println("Введите ключ для дешифровки в диапазоне от 1 до 31");
-        this.key = readKey();
+        this.length = this.message.length();
+//        System.out.println("Введите ключевое слово 1 , используя русские буквы. Текст не должен содержать цифр");
+//        this.code_word1 = read_message();
+//        System.out.println("Введите ключевое слово 2, используя русские буквы. Текст не должен содержать цифр");
+//        this.code_word2 = read_message();
     }
 
-    private String code_word;
+    public Message(int a) {
+        System.out.println("Введите зашифрованное слово, используя русские буквы. Текст не должен содержать цифр");
+        this.coded_message = read_message();
+//        System.out.println("Введите ключевое слово 1 , используя русские буквы. Текст не должен содержать цифр");
+//        this.code_word1 = read_message();
+//        System.out.println("Введите ключевое слово 2, используя русские буквы. Текст не должен содержать цифр");
+//        this.code_word2 = read_message();
+    }
+
+    private String code_word1;
+    private String code_word2;
     private String message;
-    private int key;
     private String coded_message;
+    private int length;
 
     public String getCoded_message() {
         return coded_message;
     }
 
-    public String getMessage() {
-        return message;
-    }
-
-    public int getKey() {
-        return key;
-    }
-
-    public String getCode_word() {
-        return code_word;
-    }
 
     public int readKey() {
         Scanner scanner = new Scanner(System.in);
@@ -58,6 +49,22 @@ public class Message {
         }
     }
 
+    public String getCode_word1() {
+        return code_word1;
+    }
+
+    public String getCode_word2() {
+        return code_word2;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
     public String read_message() {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -66,7 +73,7 @@ public class Message {
                 char[] char_arr = str.toCharArray();
                 for (char c : char_arr) {
                     if (Character.isDigit(c)) {
-                        System.out.println("Шифр Цезаря работает только с текстом. Во введённой строке встречено значение: " + c);
+                        System.out.println("Шифр работает только с текстом. Во введённой строке встречено значение: " + c);
                         return "";
                     }
                 }
